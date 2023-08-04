@@ -46,6 +46,7 @@ export const addSong = async (req, res, next) => {
 export const updateSong = async (req, res, next) => {
   try {
     const id = req.params.id;
+
     const song = await SongRepository.updateData(
       id,
       req.body.judul,
