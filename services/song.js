@@ -31,7 +31,7 @@ export const addSong = async (req, res, next) => {
     const [song] = [
       {
         judul: req.body.judul,
-        artis: req.body.email,
+        artis: req.body.artis,
         is_favorite: req.body.is_favorite,
       },
     ];
